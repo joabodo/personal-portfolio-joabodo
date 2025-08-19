@@ -3,7 +3,7 @@ body {
   padding: 0 20px;
   max-width: 900px;
   margin: auto;
-  background: #f4f4f4;
+  background: #f5f7fa; /* Light background color for the page */
 }
 
 nav ul {
@@ -20,14 +20,17 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #4a90e2; /* Changed link color */
   padding: 10px 15px;
   display: inline-block;
+  transition: color 0.2s;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
   background-color: #555;
+  text-decoration: underline; /* Underline on hover/active */
+  color: #357ab8; /* Slightly darker on hover/active */
 }
 
 header, section {
@@ -35,6 +38,11 @@ header, section {
   padding: 20px;
   margin-top: 20px;
   border-radius: 8px;
+}
+
+header {
+  background-color: #e3e8ee; /* Subtle background color for the header */
+  padding: 30px 0;
 }
 
 form label {
@@ -60,4 +68,12 @@ form button {
 
 form button:hover {
   background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 16px 0;
+  color: #888;
+  font-size: 1rem;
+  margin-top: 40px;
 }
